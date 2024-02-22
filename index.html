@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+        <script src="js/main.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="form-container" onsubmit="hesapla(event)">
+            <form id="myform" onsubmit="hesapla()">
+                
+                    
+                <div class="box-1">
+                    <label for="name">Adınız</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                
+                <div class="box-1">
+                    <label for="surname">Soyadınız</label>
+                    <input type="text" id="surname" name="surname">
+                </div>
+                
+                <div class="box-1">
+                    <label for="gender">Cinsiyetiniz</label>
+                    <select name="degree" id="degree">
+                        <option value="Erkek">Erkek</option>
+                        <option value="Kız">Kız</option>
+                    </select>
+                </div>
+    
+                
+                <div class="box-1">
+                    <label for="age">Yaşınız</label>
+                    <input type="text" id="age" name="age">
+                </div>
+    
+                <div class="box-1">
+                    <label for="height">Boyunuz</label>
+                    <input type="text" id="height" name="height">
+                </div>
+                
+                <div class="box-1">
+                    <label for="weight">Kilonuz</label>
+                    <input type="text" id="weight" name="weight">
+                </div>
+    
+                
+                <div class="box-1">
+                    <label for="waist">Bel Çevreniz(cm)</label>
+                    <input type="text" id="waist" name="waist">
+                </div>
+    
+                <div class="box-1">
+                    <label for="hip">Kalça Çevreniz(cm)</label>
+                    <input type="text" id="hip" name="hip">
+                </div>
+    
+                <div class="box-1">
+                    <label for="neck">Boyun Çevreniz(cm)</label>
+                    <input type="text" id="neck" name="neck">
+                </div>
+    
+                <div class="box-1">
+                    <label for="name">Aktivite Düzeyi</label>
+                    <select name="lifestyle" id="lifestyle">
+                        <option value="Hafif">Hafif</option>
+                        <option value="Orta">Orta</option>
+                        <option value="Yüksek">Yüksek</option>
+                    </select>
+                </div>
+    
+                <div class="box-2">
+                    <button class="button-18" type="submit" onclick="hesapla()">Hesapla</button>
+                    <button class="button-18" type="submit">Kaydet</button>
+                    <input class="button-18" type="reset" value="Sil">
+                </div>
+                
+        </form>
+    
+        </div>
+    
+        <div class="table-container">
+            <table id="table-1">
+                <thead>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>AD</th>
+                        <th></th>
+                    </tr>
+                    
+                    <tr>
+                        <th>Cinsiyet</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Boy</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Bel Çevresi</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Boyun Çevresi</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>İdeal Kilo(KG)</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Vücuttaki Yağ Oranı</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Yağsız Vücut Ağırlığı</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Toplam Kemik Ağırlığı</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Vücuttaki Kan Miktarı</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Günlük Kalori İhtiyacı</th>
+                        <th></th>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+        </div>
+        <div class="table-container">
+            <table id="table-2">
+                <thead>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Soyad</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Yaş</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Kilo</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Kalça Çevresi</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Yaşam Tarzı</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Kilo Farkı</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Vücuttaki yağ miktarı</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Beden Kitle indeksi</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Vücuttaki Kas Oranı</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Sonuç</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Günlük Su İhtiyacı</th>
+                        <th></th>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+        </div>
+
+        
+        
+    </div>
+    
+    
+
+    
+    
+    <div class="container">
+        <table class="tablo2">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>ADI</th>
+                    <th>SOYADI</th>
+                    <th>CİNSİYET</th>
+                    <th>YAŞ</th>
+                    <th>BOY</th>
+                    <th>KİLO</th>
+                    <th>BEL</th>
+                    <th>KALÇA</th>
+                    <th>Boyun</th>
+                    <th>Yaşam Tarzı</th>
+                    <th>İdeal Kilo</th>
+                    <th>Kilo Farkı</th>
+                    <th>Yağ Oranı</th>
+                    <th>BKİ</th>
+                    <th>Kas Oranı</th>
+                    <th>Kan Miktarı</th>
+                    <th>Sonuç</th>
+                    <th>Günlük Kalori İhtiyacı</th>
+                    <th>Günlük Su İhtiyacı</th>
+                    <th>İşlem Tarihi</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                
+                
+                
+                
+            </tbody>
+        </table>
+        
+    </div>
+</body>
+</html>
